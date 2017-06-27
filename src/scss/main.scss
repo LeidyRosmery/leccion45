@@ -19,10 +19,22 @@
   @include style($base-color,5%,$primary-color, 20px);
 }
 .menu {
-  @include style($base-color,5%,$second-color, 12px);
+  @include style($base-color,2%,$second-color, 12px);
   margin: 2%;
 }
-
+.principal {
+  @include style($second-color ,5%,$base-color, 12px);
+  margin: 1%;
+}
+.aside {
+  @include style($base-color,5%,$second-color, 12px);
+  margin: 2%;
+  text-align: center;
+  line-height:18px;
+}
+.pie {
+  @extend .aside;
+}
 @media(max-width:768px){
   .small-1 {
     width: 8.33%;

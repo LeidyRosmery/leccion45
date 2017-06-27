@@ -47,10 +47,26 @@
 
 .menu {
   color: white;
-  padding: 5%;
-  background: black;
+  padding: 2%;
+  background: #3e3f40;
   font-size: 12px;
   margin: 2%; }
+
+.principal {
+  color: #3e3f40;
+  padding: 5%;
+  background: white;
+  font-size: 12px;
+  margin: 1%; }
+
+.aside, .pie {
+  color: white;
+  padding: 5%;
+  background: #3e3f40;
+  font-size: 12px;
+  margin: 2%;
+  text-align: center;
+  line-height: 18px; }
 
 @media (max-width: 768px) {
   .small-1 {
