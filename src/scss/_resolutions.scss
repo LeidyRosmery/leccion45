@@ -1,5 +1,6 @@
+$col-basic:8.33%;
 @for $i from 1 through 12 {
-  .small-#{i}{
-    width: 100%/$i;
+  .small-#{i} {
+    width:1 * $col-basic ;
   }
 }
