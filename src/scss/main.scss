@@ -15,7 +15,7 @@
 }
 
 .title {
-    @include style($base-color,5%,$primary-color, 20px);
+    @include style($base-color,2%,$primary-color, 20px);
 }
 
 .menu {
@@ -24,7 +24,7 @@
 }
 
 .principal {
-    @include style($second-color ,5%,$base-color, 12px);
+    @include style($second-color ,10px,$base-color, 12px);
     margin-top: 1%;
 }
 
@@ -46,13 +46,14 @@
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 750px;
   }
   @for $i from 1 through 12 {
     .small-#{$i} {
       width: columWidth($i) ;
+      float: left;
     }
   }
 
@@ -65,22 +66,23 @@
   @for $i from 1 through 12 {
     .medium-#{$i} {
       width: columWidth($i) ;
+      float: left;
     }
   }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
     width: 1170px;
   }
   @for $i from 1 through 12 {
     .large-#{$i} {
       width: columWidth($i) ;
+      float: left;
     }
   }
 }
 
-
 .row {
-    max-width: 960px;
+
     margin: 0 auto;
 }
