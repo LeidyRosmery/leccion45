@@ -7,16 +7,20 @@
   margin: 0;
   padding: 0;
 }
+@mixin style($color , $padd , $bg-color , $f-size){
+  color:$color ;
+  padding:$padd ;
+  background:$bg-color ;
+  font-size:$f-size ;
+}
+
 
 .title{
-  color: $base-color;
-  background: $primary-color;
-  padding:5%;
-  font-size: 20px;
+  @include style($base-color,5%,$primary-color, 20px);
 }
-.menu{
-  @extend .title;
-
+.menu {
+  @include style($base-color,5%,$second-color, 12px);
+  margin: 2%;
 }
 
 @media(max-width:768px){
