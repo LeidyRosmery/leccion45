@@ -15,12 +15,12 @@
 }
 
 .title {
-    @include style($base-color,2%,$primary-color, 20px);
+    @include style($base-color,10px,$primary-color, 20px);
 }
 
 .menu {
-    @include style($base-color,2%,$second-color, 12px);
-    margin-top:  3px;
+    @include style($base-color,10px,$second-color, 12px);
+    margin-top: 3px;
 }
 
 .principal {
@@ -29,8 +29,8 @@
 }
 
 .aside {
-    @include style($base-color,5%,$second-color, 12px);
-    margin-top: 2%;
+    @include style($base-color,10px,$second-color, 12px);
+    margin-top: 4px;
     text-align: center;
     line-height: 18px;
 }
@@ -38,51 +38,36 @@
 .pie {
     @extend .aside;
 }
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-  @for $i from 1 through 12 {
-    .small-#{$i} {
-      width: columWidth($i) ;
-      float: left;
+     @for $i from 1 through 12{
+        .small-#{$i} {
+            width: columWidth($i);
+            float: left;
+        }
     }
-  }
-
 }
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-
-  @for $i from 1 through 12 {
-    .medium-#{$i} {
-      width: columWidth($i) ;
-      float: left;
+     @for $i from 1 through 12{
+        .medium-#{$i} {
+            width: columWidth($i);
+            float: left;
+        }
     }
-  }
 }
-@media (max-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-  @for $i from 1 through 12 {
-    .large-#{$i} {
-      width: columWidth($i) ;
-      float: left;
+@media (min-width: 1200px) {
+     @for $i from 1 through 12{
+        .large-#{$i} {
+            width: columWidth($i);
+            float: left;
+        }
     }
-  }
 }
 
 .row {
-
     margin: 0 auto;
+}
+
+ol{
+  list-style: none;
+  padding-left: 20px;
 }
